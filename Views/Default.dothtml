@@ -1,0 +1,20 @@
+﻿@viewModel DotvvmApp.ViewModels.DefaultViewModel, DotvvmApp
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="TitleContent">
+   Sum Calculator
+</dot:Content>
+<dot:Content ContentPlaceHolderID="MainContent">
+    <form style="text-align: center;">
+        <span>
+            <dot:TextBox Text="{{value: Number1}}" ValueType="Number" />
+
+            +
+            <dot:TextBox Text="{{value: Number2}}" ValueType="Number" />
+            =
+            {{value: Result}}
+
+
+        </span>
+        <dot:Button Text="Calculate" Click="{command: Calculate(2)}" />
+    </form>
+</dot:Content>

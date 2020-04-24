@@ -1,0 +1,31 @@
+﻿@viewModel DotvvmApp.ViewModels.MasterPageViewModel, DotvvmApp
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DotvvmApp</title>
+    <dot:RequiredResource Name="style" />
+</head>
+<body>
+    <header>
+        <img src="https://www.quadiontech.com/img/logoNav.svg"/>
+
+        <nav>
+            <dot:RouteLink RouteName="Default" Text="Sum Calculator"></dot:RouteLink>
+            <dot:RouteLink RouteName="About" Text="About"></dot:RouteLink>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            <dot:ContentPlaceHolder ID="TitleContent" />
+        </h1>
+        <section>
+            <dot:ContentPlaceHolder ID="MainContent" />
+        </section>
+    </main>
+    <footer>
+        Sum Calculator @QuadionTech
+    </footer>
+</body>
+</html>
