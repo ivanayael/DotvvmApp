@@ -1,0 +1,12 @@
+﻿@viewModel DotvvmApp.ViewModels.AboutViewModel, DotvvmApp
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="TitleContent">
+    About
+
+</dot:Content>
+<dot:Content ContentPlaceHolderID="MainContent">
+    My Name is Ivana Curra using DotVVM. This is a sum calculator
+
+</dot:Content>
+
